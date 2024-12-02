@@ -26,7 +26,7 @@ class Perceptron:
                 self.weights += update * x_i
                 self.bias += update
 
-    def unit_step_func(x):
+    def unit_step_func(self, x):
         return np.where(x > 0, 1, 0)
 
     def predict(self, X):
